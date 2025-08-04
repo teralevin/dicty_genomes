@@ -3,7 +3,7 @@ set -euo pipefail
 
 
 # -------------------------------------------------------------------
-# extract_repeat_coord.sh
+# 02_extract_telomere_motif.sh
 #  - takes a single TRF .dat file
 #  - extracts repeats → BED
 #  - writes consensus.fa

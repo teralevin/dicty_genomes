@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 """
-map_tblastn_results.py — Parse TBLASTN output, summarize proteins per contig, and map to gene names.
+10_parse_mtdna_prot.py — Parse TBLASTN output, summarize proteins per contig, and map to gene names.
 
 USAGE:
-    map_tblastn_results.py -i INPUT_TBLASTN -o OUTPUT_MAPPING
+    10_parse_mtdna_prot.py -i INPUT_TBLASTN -o OUTPUT_MAPPING
         [-s SUMMARY_TSV -c CONTIG_LIST]
         [-m MAPPING_CSV -g OUTPUT_WITH_GENES]
 
@@ -28,13 +28,13 @@ OPTIONS:
 
 EXAMPLES:
     # Parse TBLASTN to mapping:
-    map_tblastn_results.py -i raw.tblastn.outfmt6 -o protein_to_contigs.tsv
+    10_parse_mtdna_prot.py -i raw.tblastn.outfmt6 -o protein_to_contigs.tsv
 
     # Summarize per contig:
-    map_tblastn_results.py -i raw.tblastn.outfmt6 -o protein_to_contigs.tsv -s contig_summary.tsv -c my_contigs.txt
+    10_parse_mtdna_prot.py -i raw.tblastn.outfmt6 -o protein_to_contigs.tsv -s contig_summary.tsv -c my_contigs.txt
 
     # Annotate summary with gene names:
-    map_tblastn_results.py -i raw.tblastn.outfmt6 -o protein_to_contigs.tsv -s contig_summary.tsv -c my_contigs.txt -m protein_name_map.csv -g contig_summary_with_genes.tsv
+    10_parse_mtdna_prot.py -i raw.tblastn.outfmt6 -o protein_to_contigs.tsv -s contig_summary.tsv -c my_contigs.txt -m protein_name_map.csv -g contig_summary_with_genes.tsv
 """
 
 import argparse

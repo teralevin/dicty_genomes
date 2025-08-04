@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-# run_trf.sh — Run Tandem Repeat Finder (TRF) on all .fa files in a directory
+# 01_run_trf.sh — Run Tandem Repeat Finder (TRF) on all .fa files in a directory
 #
 # Usage:
-#   run_trf.sh -s SEQUENCE_DIR -o OUTPUT_DIR -l LOG_DIR
+#   01_run_trf.sh -s SEQUENCE_DIR -o OUTPUT_DIR -l LOG_DIR
 #
 # Options:
 #   -s  Directory containing .fa sequence files.

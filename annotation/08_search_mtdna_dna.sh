@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-# search_mtdna_dna.sh — BLAST reference mtDNA against species contigs
+# 08_search_mtdna_dna.sh — BLAST reference mtDNA against species contigs
 #
 # Usage:
-#   search_mtdna_dna.sh -d MT_DNA -s SPECIES_DIR -o OUT_DIR [-l LOG_DIR] [-c CPUS]
+#   08_search_mtdna_dna.sh -d MT_DNA -s SPECIES_DIR -o OUT_DIR [-l LOG_DIR] [-c CPUS]
 #
 # Options:
 #   -d MT_DNA       Reference mitochondrial DNA FASTA (required)
