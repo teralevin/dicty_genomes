@@ -58,31 +58,31 @@ To use this repository, ensure the following requirements are met:
 
 ---
 
-## Repository Structure
+#### Repository Structure
 
 ```text
 ├── annotation
-│   ├── 01_run_trf.sh             # Tandem Repeat Finder wrapper
-│   ├── 02_extract_telomere_motif.sh
-│   ├── 03_filter_telomeres.py
-│   ├── 04_find_TE.sh             # RepeatMasker/BLAST TE discovery
-│   ├── 05_generate_TE_bedgraph.py
-│   ├── 06_run_rrna_blast.sh
-│   ├── 07_map_rrna_summary.py
-│   ├── 08_search_mtdna_dna.sh
-│   ├── 09_search_mtdna_prot.sh
-│   ├── 10_parse_mtdna_prot.py
-│   └── contig_mapping.txt  #contig mapping for the AX4 reference species and the TNS-C-14 
-├── assembly                     # De novo assembly & polishing workflows
+│   ├── 01_run_trf.sh                # Run Tandem Repeat Finder on genome FASTA
+│   ├── 02_extract_telomere_motif.sh # Search for putative telomere motifs 
+│   ├── 03_filter_telomeres.py       # Filter and process telomere motif hits
+│   ├── 04_find_TE.sh                # Identify transposable elements (RepeatMasker/BLAST)
+│   ├── 05_generate_TE_bedgraph.py   # Generate bedGraph of TE density
+│   ├── 06_run_rrna_blast.sh         # Extract rRNA transcripts via BLAST
+│   ├── 07_map_rrna_summary.py       # Summarize rRNA BLAST results
+│   ├── 08_search_mtdna_dna.sh       # Identify mtDNA‐containing contigs with BLASTn
+│   ├── 09_search_mtdna_prot.sh      # Identify mtDNA proteins with tblastn
+│   ├── 10_parse_mtdna_prot.py       # Parse mtDNA protein BLAST output
+│   └── contig_mapping.txt           # Contig name mapping for AX4 reference and TNS-C-14 
+├── assembly                         # De novo assembly & polishing workflows
 ├── quality-control
-│   ├── 01_variant_calling.sh    # Bcf variant calling
-│   └── 02_run_craq.sh           # CRAQ structural error detection
+│   ├── 01_variant_calling.sh        # Call variants with bcftools/GATK
+│   └── 02_run_craq.sh               # Detect structural errors using CRAQ
 └── tgr_locus
-    ├── 01_tgr_extraction.py     # Extract tgrBC syntenic locus from GFF/bedgraph
-    ├── 02_tgr_TE_intersection.py# Intersect TEs with tgr loci, optional gene annotation
-    ├── 03_tgr_CSE_intersection.py# Intersect tgr loci with conserved sequence elements
-    └── tgrBClocus_wacA2chdB.bedgraph.txt #tgrBC syntenic locus across all species
-```
+    ├── 01_tgr_extraction.py         # Extract tgrBC syntenic locus from GFF & bedGraph
+    ├── 02_tgr_TE_intersection.py    # Intersect TEs with tgr loci (optional gene annotation)
+    ├── 03_tgr_CSE_intersection.py   # Intersect tgr loci with CRAQ-identified structural errors
+    └── tgrBClocus_wacA2chdB.bedgraph.txt  
+                                    # BedGraph of tgrBC locus coordinates across species
 
 Each subdirectory contains a driver script and helper scripts. You can execute steps individually or chain them into a pipeline.
 
