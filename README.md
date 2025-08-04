@@ -83,10 +83,11 @@ To use this repository, ensure the following requirements are met:
     ├── 03_tgr_CSE_intersection.py   # Intersect tgr loci with CRAQ-identified structural errors
     └── tgrBClocus_wacA2chdB.bedgraph.txt  
                                     # BedGraph of tgrBC locus coordinates across species
-
+```
 Each subdirectory contains a driver script and helper scripts. You can execute steps individually or chain them into a pipeline.
 
 ---
+
 ## Citation
 If you use these scripts or the assemblies/annotations generated with them, please cite:
 
