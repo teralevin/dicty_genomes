@@ -2,10 +2,10 @@
 set -euo pipefail
 
 # -----------------------------------------------------------------------------
-# run_blast_analysis.sh
+# find_TE.sh
 #
 # Usage:
-#   run_blast_analysis.sh <contigs_dir> [threads]
+#   find_TE.sh <contigs_dir> [threads]
 #
 #   <contigs_dir> : path to directory containing your .fa contig files
 #   [threads]     : number of CPU threads to use (default: all available)
