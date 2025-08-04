@@ -2,18 +2,18 @@
 set -euo pipefail
 
 # -----------------------------------------------------------------------------
-# variant_calling.sh
+# 01_variant_calling.sh
 #
 # Usage:
 #   # with defaults (PL=1, CUTOFF=0.05)
-#   ./variant_calling.sh <assembly.fasta> <reads_R1.fastq> [reads_R2.fastq]
+#   ./01_variant_calling.sh <assembly.fasta> <reads_R1.fastq> [reads_R2.fastq]
 #
 #   # override PL & CUTOFF
-#   ./variant_calling.sh <ploidy> <cutoff> <assembly.fasta> <reads_R1.fastq> [reads_R2.fastq]
+#   ./01_variant_calling.sh <ploidy> <cutoff> <assembly.fasta> <reads_R1.fastq> [reads_R2.fastq]
 #
 # Examples:
-#   ./variant_calling.sh ref.fa R1.fastq R2.fastq
-#   ./variant_calling.sh 2 0.10 ref.fa R1.fq
+#   ./01_variant_calling.sh ref.fa R1.fastq R2.fastq
+#   ./01_variant_calling.sh 2 0.10 ref.fa R1.fq
 # -----------------------------------------------------------------------------
 
 usage() {

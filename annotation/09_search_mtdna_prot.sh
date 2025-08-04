@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-# search_mtdna_prot.sh — Build BLAST DBs and run tBLASTn of mitochondrial proteins vs. contigs
+# 09_search_mtdna_prot.sh — Build BLAST DBs and run tBLASTn of mitochondrial proteins vs. contigs
 #
 # Usage:
-#   search_mtdna_prot.sh -m MT_PROT -s SPECIES_DIR -o OUT_DIR [-l LOG_DIR] [-c CPUS]
+#   09_search_mtdna_prot.sh -m MT_PROT -s SPECIES_DIR -o OUT_DIR [-l LOG_DIR] [-c CPUS]
 #
 # Options:
 #   -m MT_PROT       FASTA of mitochondrial proteins (e.g. mt_proteins.faa)

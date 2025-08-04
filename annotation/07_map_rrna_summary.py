@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-map_rrna_summary.py — Map gene IDs to rRNA elements and summarize BLAST hits
+07_map_rrna_summary.py — Map gene IDs to rRNA elements and summarize BLAST hits
 
 USAGE
     # Map gene IDs to rRNA elements:
-    map_rrna_summary.py map -s RRNA_HITS_SUMMARY.tsv -g gene_to_rrna_table.tsv -o mapped_rrna_hits.tsv
+    07_map_rrna_summary.py map -s RRNA_HITS_SUMMARY.tsv -g gene_to_rrna_table.tsv -o mapped_rrna_hits.tsv
 
     # Summarize mapped rRNA hits per species:
-    map_rrna_summary.py summarize -i mapped_rrna_hits.tsv -o rrna_per_species_summary.tsv
+    07_map_rrna_summary.py summarize -i mapped_rrna_hits.tsv -o rrna_per_species_summary.tsv
 
 COMMANDS
     map        Map gene IDs to rRNA elements using a lookup table.

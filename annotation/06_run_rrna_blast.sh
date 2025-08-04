@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-# run_rrna_blast.sh — BLAST rRNA query against all genome FASTAs
+# 06_run_rrna_blast.sh — BLAST rRNA query against all genome FASTAs
 #
 # Usage:
-#   run_rrna_blast.sh -q QUERY_FASTA -g GENOME_DIR -o OUT_DIR -s SUMMARY_FILE [-l LOG_DIR] [-c CPUS]
+#   06_run_rrna_blast.sh -q QUERY_FASTA -g GENOME_DIR -o OUT_DIR -s SUMMARY_FILE [-l LOG_DIR] [-c CPUS]
 #
 # Options:
 #   -q QUERY_FASTA   Path to rRNA query FASTA (e.g. rRNA_seq.fasta)

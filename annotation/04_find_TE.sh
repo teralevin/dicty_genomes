@@ -2,10 +2,10 @@
 set -euo pipefail
 
 # -----------------------------------------------------------------------------
-# find_TE.sh
+# 04_find_TE.sh
 #
 # Usage:
-#   find_TE.sh <contigs_dir> [threads]
+#   04_find_TE.sh <contigs_dir> [threads]
 #
 #   <contigs_dir> : path to directory containing your .fa contig files
 #   [threads]     : number of CPU threads to use (default: all available)

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-filter_telomeres.py — Filter BED repeats to those near contig ends
+03_filter_telomeres.py — Filter BED repeats to those near contig ends
 
 Usage:
-  filter_telomeres.py <BED> <LENGTHS_CSV> [-bp TERMINAL_BP | -f FRACTION] -o OUTPUT
+  03_filter_telomeres.py <BED> <LENGTHS_CSV> [-bp TERMINAL_BP | -f FRACTION] -o OUTPUT
 
 Positional arguments:
   BED             Input BED file (tab-delim columns: chrom, start, end)
@@ -17,12 +17,12 @@ Options (one required):
 
 Examples:
   # Within 5 kb of contig ends:
-  python filter_telomeres.py assembly.repeats.bed contig_lengths.csv \
+  python 03_filter_telomeres.py assembly.repeats.bed contig_lengths.csv \
         -bp 5000 \
         -o terminal_5kb.bed
 
-  # Within 2 % of each contig’s length:
-  python filter_telomeres.py assembly.repeats.bed contig_lengths.csv \
+  # Within the last 2 % of each contig’s length:
+  python 03_filter_telomeres.py assembly.repeats.bed contig_lengths.csv \
         -f 0.02 \
         -o terminal_2pct.bed
 """

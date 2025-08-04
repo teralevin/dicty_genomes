@@ -2,10 +2,10 @@
 set -euo pipefail
 
 # -----------------------------------------------------------------------------
-# run_craq.sh
+# 02_run_craq.sh
 #
 # Usage:
-#   run_craq.sh -n <nanopore.{fastq.gz|bam}> \
+#   02_run_craq.sh -n <nanopore.{fastq.gz|bam}> \
 #                     -a <assembly.fa> \
 #                     -i <illumina.{fastq.gz|bam}[,<illumina2.{fastq.gz|bam}>] \
 #                     [-t threads] \
