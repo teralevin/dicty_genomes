@@ -1,3 +1,6 @@
+[![Contributors](https://img.shields.io/github/contributors/teralevin/dicty_genomes)](
+https://github.com/teralevin/dicty_genomes/graphs/contributors)
+
 # Dictyostelium Genome Annotation, Assembly & tgr Locus Analysis
 
 This repository contains a collection of scripts and workflows to:
