@@ -13,7 +13,6 @@ This repository contains a collection of scripts and workflows to:
 Assembled genomes and annotations have been deposited in NCBI under:
 
 - **BioProject**: [PRJNA1300491](http://www.ncbi.nlm.nih.gov/bioproject/1300491) 
-- **Locus tag prefix**: `ACTA71` 
 
 ---
 
