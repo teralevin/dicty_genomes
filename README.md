@@ -93,8 +93,6 @@ Each subdirectory contains a driver script and helper scripts. You can execute s
 
 ## Citation
 If you use these scripts or the assemblies/annotations generated with them, please cite:
-
-> Holland M., Ahmed M., Young J.M., McFadyen S., Drurey J.R., Ostrowski E.A., Levin T.C. (2025)
+> Holland M, Ahmed M, Young JM, Drurey JR, McFadyen S, Ostrowski EA, Levin TC. (2025) 
 > Hypermutable hotspot enables the rapid evolution of self/non-self recognition genes in *Dictyostelium*.
-> *bioRxiv*. [https://doi.org/10.1101/2025.08.01.668227](https://doi.org/10.1101/2025.08.01.668227)
-
+> Proc Natl Acad Sci U S A 122(51): e2520843122. https://doi.org/10.1073/pnas.2520843122 
